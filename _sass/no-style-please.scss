@@ -1,35 +1,55 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
   filter: invert(1);
+
   img {
     filter: invert(1);
 
-    &.ioda { filter: invert(0); }
+    &.ioda {
+      filter: invert(0);
+    }
   }
-  .emoji { filter: invert(1); }
+
+  .emoji {
+    filter: invert(1);
+  }
+
   iframe {
     filter: invert(1);
   }
 }
 
-body[a="dark"] { @include dark-appearance; }
+@import "custom_fonts";
+
+body[a="dark"] {
+  @include dark-appearance;
+}
 
 
 @media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+  body[a="auto"] {
+    @include dark-appearance;
+  }
 }
+
 // -------------------------------------------- //
 
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: #fcf6e6; }
+html,
+body {
+  background: #fcf6e6;
+}
 
-html { height: 100%; scroll-behavior: smooth; }
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
 body {
   color: black;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "OrangeAvenueDEMO-Regular";
   font-style: normal;
   font-size: 16px;
   line-height: 1.4;
@@ -38,23 +58,38 @@ body {
   overflow-wrap: break-word;
 }
 
-.post-meta { text-align: right; }
+.post-meta {
+  text-align: right;
+}
 
-h2 { 
-  margin-top: 3rem; 
+h2 {
+  margin-top: 3rem;
   font-family: "Nanum Myeongjo", serif;
   font-style: normal;
 }
 
-h3, h4, h5, h6 { margin-top: 3rem; }
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 3rem;
+}
 
-hr { margin: 2rem 0; }
+hr {
+  margin: 2rem 0;
+}
 
-p { margin: 1rem 0; }
+p {
+  margin: 1rem 0;
+}
 
-li { margin: 0.4rem 0; }
+li {
+  margin: 0.4rem 0;
+}
 
-*:target { background: yellow; }
+*:target {
+  background: yellow;
+}
 
 .w {
   max-width: 640px;
@@ -66,13 +101,22 @@ hr {
   text-align: center;
   border: 0;
 
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
+  &:before {
+    content: '/////'
+  }
+
+  &:after {
+    content: attr(data-content) '/////'
+  }
 }
 
-table { width: 100%; }
+table {
+  width: 100%;
+}
 
-table, th, td {
+table,
+th,
+td {
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4rem;
@@ -95,7 +139,9 @@ blockquote {
   border: thin solid black;
   padding: 1rem;
 
-  p { margin: 0; }
+  p {
+    margin: 0;
+  }
 }
 
 img {
