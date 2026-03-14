@@ -1,5 +1,5 @@
 @font-face {
   font-family: 'OrangeAvenueDEMO-Regular';
-  src: url('{{ "/assets/fonts/OrangeAvenueDEMO-Regular.otf" | relative_url }}') format('.otf');
+  src: url('../fonts/OrangeAvenueDEMO-Regular.otf') format('opentype');
   /* Add other formats and styles as needed */
 }
