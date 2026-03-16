@@ -57,21 +57,14 @@ body {
   text-align: right;
 }
 
-h1 {
-  font-family: "OrangeAvenueDEMO-Regular", sans-serif;
-  font-style: normal;
-}
-
-h2 {
-  margin-top: 3rem;
-  font-family: "Nanum Myeongjo", serif;
-  font-style: normal;
-}
-
+h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: "OrangeAvenueDEMO-Regular", sans-serif;
+  font-style: normal;
   margin-top: 3rem;
 }
 
